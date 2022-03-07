@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section class="header">
+        <div class="navbar">
+            <div class="container">
+                <a class="logo" href="#">Kuba <span>Jakubowski</span></a>
+
+                <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+                <nav>
+                    <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="close navigation">
+                    
+                    <ul>
+                        <li class="nav-links"><a href="#">O mnie</a></li>
+                        <li class="nav-links"><a href="#">Blog</a></li>
+                        <li class="nav-links"><a href="#">galeria</a></li>
+                        <li class="nav-links"><a href="#">Kontakt</a></li>
+                        <li class="go-premium-cta"><a href="#">pobierz CV</a></li>
+                                            
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="powitanie">
+            <h1>Witam na mojej stronie internetowej</h1>
+            <h3>Jest to miejsce,<br> gdzie pokazuję moję umiejętności<br> z zakresu HTML, CSS oraz Java Script</h3>
+            <a class="link-btn" href="#">Skontaktuj się ze mną i zaproś mnie na rozmowę rekrutacyjną ;)</a>
+        </div>
+
+    </section>
+        <div class="zalety">
+
+
+
+        </div>
+    
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/jaa.jpg" alt="person">
+    
+                    <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</blockquote>
+                    <cite>Jane Doe</cite>
+                    </li>
+    
+                <li>
+                    <img src="images/jaa.jpg" alt="person">
+    
+                    <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</blockquote>
+                    <cite>Jane Doe</cite>
+                </li>
+    
+                <li>
+                    <img src="images/jaa.jpg" alt="person">
+    
+                    <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</blockquote>
+                    <cite>Jane Doe</cite>
+                </li>
+    
+            </ul>
+        </div>
+    </section>
+    
+            
+       
+
+    
+
+    <script>
+        let mobileBtn = document.getElementById('mobile-cta')
+        let nav = document.querySelector('nav')
+        let mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+        
+
+    </script>
+
+</body>
+</html>
