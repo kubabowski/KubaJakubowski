@@ -25,6 +25,14 @@ body{
     position: relative;
 }
 
+.header-blog, .header-about, .header-kontakt, .header-galeria, .header-CV {
+    padding: 0;
+    width: auto;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/autobustlo.JPG);
+    
+    background-size: inherit;
+}
+
 .navbar {
     background: rgba(4, 3, 68, 0.1);
     padding: 1em;
@@ -206,6 +214,296 @@ nav {
     }        
 }
 
+.about {
+
+    .row {
+        flex-direction: column;
+    }
+} 
+
+.about {
+    width: 90;
+    margin: auto;
+    text-align: center;
+    padding-top:  100px;
+
+    h1 {
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    p {
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 22px;
+        padding: 10px;
+    }
+
+    .row {
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .about-column {
+        flex-basis: 31%;
+        background: rgb(236, 144, 144);
+        border-radius: 2px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        box-shadow: 3px 3px 6px rgba(163, 0, 0, 0.3);
+        transition: 0.5s;
+
+        &:hover {
+            box-shadow: 3px 3px 6px rgba(163, 0, 0, 0.7); 
+        }
+    }
+
+    h3 {
+        text-align: center;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+} 
+
+.articles {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+
+    h1{
+        font-size: 35px;
+    }
+    p{
+        font-size: 20px;
+    }
+    
+    
+    .row {
+        padding-top: 50px;
+        display: block;
+
+        .blog-col {
+            
+            border-radius: 10px;
+            margin-bottom: 50px;
+            position: relative;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                display: block;
+            }
+
+            .layer {
+                background: transparent;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                &:hover {
+                    background: rgba(70, 117, 247, 0.5);
+
+                    h3 {
+                        bottom: 49%;
+                        opacity: 1;
+                    }
+                }
+                
+                h3 {
+                    width: 100%;
+                    font-weight: bold;
+                    color: white;
+                    font-size: 28px;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    position: absolute;
+                    opacity: 0;
+                    transition: 0.5s;                    
+                }                
+            }
+        }
+    }
+}    
+
+
+
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border-radius: .3em;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: none;
+    margin-bottom: 5em;
+    border-radius: 5em;
+    display: inline-block;
+    padding: .8em 2em;
+    width: unset;
+    cursor: pointer;
+
+}
+
+
+iframe #mapa {
+    width: 80%;
+    height: 150px;
+}
+
+.galeria-body {
+    overflow: hidden;
+}
+
+.galeria {
+    
+    overflow: hidden;
+}
+.gallery-container {
+    left: 50%;
+    top: 50%;    
+    transform: translate(25%, 25%);
+
+}
+
+.banner1, .banner2, .banner3, .banner4, .banner5 {
+    height: 50vh;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    img {
+        width: 120%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        animation: zoom-out 3s linear infinite;
+    }
+
+    
+}
+
+@keyframes zoom-out {
+    100% {
+        width: 100%;
+    }
+}
+
+.banner1 {
+    animation: slide1 12s linear infinite;
+}
+
+.banner2 {
+    animation: slide2 12s linear infinite;
+}
+
+.banner3 {
+    animation: slide3 12s linear infinite;
+}
+
+.banner4 {
+    animation: slide4 12s linear infinite;
+}
+
+
+@keyframes slide1 {
+    0% {
+        visibility: visible;
+    }
+    25% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    75% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+
+@keyframes slide2 {
+    0% {
+        visibility: hidden;
+    }
+    25% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: visible;
+    }
+    75% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes slide3 {
+    0% {
+        visibility: hidden;
+    }
+    25% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    75% {
+        visibility: visible;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes slide4 {
+    0% {
+        visibility: hidden;
+    }
+    25% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    75% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
 @media only screen and (min-width:870px) {
     .mobile-menu, .mobile-menu-exit {
         display: none;
@@ -271,9 +569,7 @@ nav {
             font-size: 30px;
         }
 
-        .link-btn {
-
-        }
+        
     }
 
         
@@ -285,6 +581,61 @@ nav {
         }
     }
 
+    .articles {
+
+        h1{
+            font-size: 50px;
+        }
+        p{
+            font-size: 30px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+
+            .blog-col {
+                flex-basis: 30%;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .contact-section {
+        position: relative;
+        padding-left: 3em;
+
+        .container{
+            display:  flex;
+            justify-content: space-between;
+        }
+    }
+
+    .contact-right {
+        position: absolute;
+        right: 1em;
+        top: 5em;
+        width: 45%;
+        height: 70%;
+
+        iframe {
+            height: 100%;
+        }
+    }
+
+}
+
+#CV {
+    width: auto;
 }
 
 
+@media (min-width: 650px){
+
+    .about {
+
+        .row {
+            flex-direction: row;
+        }
+    }
+    
+}
