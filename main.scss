@@ -396,6 +396,7 @@ iframe #mapa {
     font-size: 25px;
     z-index: 10;
     top: 40%;
+    font-weight: 700;
   }
   .navigation .nav-btn {
     background: rgba(255, 255, 255, 0.55);
@@ -424,18 +425,7 @@ iframe #mapa {
     border:8px solid white;
   }
   
-  .caption {
-    position: absolute;
-    bottom: 0;
-    width: 103%;
-    display: flex;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-    color: rgb(255, 255, 255);
-    background: rgba(0, 0, 0, 0.3);
-    height: 35px;
-  }
+
   
   .item {
     position: absolute;
