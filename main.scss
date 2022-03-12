@@ -233,7 +233,7 @@ nav {
     }
 
     p {
-        color: white;
+        color: black;
         font-size: 14px;
         font-weight: bold;
         line-height: 22px;
@@ -374,135 +374,78 @@ iframe #mapa {
     height: 150px;
 }
 
-.galeria-body {
-    overflow: hidden;
-}
-
-.galeria {
+.carousel-container {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
     
-    overflow: hidden;
-}
-.gallery-container {
-    left: 50%;
-    top: 50%;    
-    transform: translate(25%, 25%);
-
-}
-
-.banner1, .banner2, .banner3, .banner4, .banner5 {
-    height: 50vh;
-    width: 50%;
+  }
+  
+  .navigation .prev {
     position: absolute;
-    top: 0;
-    left: 0;
+    z-index: 10;
+    font-size: 25px;
+    top: 40%;
+    left: 10px;
+    font-weight: 700;
+  }
+  .navigation .next {
+    right: 10px;
+    position: absolute;
+    font-size: 25px;
+    z-index: 10;
+    top: 40%;
+  }
+  .navigation .nav-btn {
+    background: rgba(255, 255, 255, 0.55);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  }
+  .navigation .nav-btn:hover {
+    background: white;
+  }
+  
+  .carousel {
+    margin-top: 20px;
+    transition: all 0.3s ease;
+   
+  }
+  .carousel img {
+    width: 100%;
+    transition: all 0.3s ease;
+    border:8px solid white;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 0;
+    width: 103%;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.3);
+    height: 35px;
+  }
+  
+  .item {
+    position: absolute;
+    display: none;
+  }
+  
+  .main {
+    display: block;
+  }
 
-    img {
-        width: 120%;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        animation: zoom-out 3s linear infinite;
-    }
-
-    
-}
-
-@keyframes zoom-out {
-    100% {
-        width: 100%;
-    }
-}
-
-.banner1 {
-    animation: slide1 12s linear infinite;
-}
-
-.banner2 {
-    animation: slide2 12s linear infinite;
-}
-
-.banner3 {
-    animation: slide3 12s linear infinite;
-}
-
-.banner4 {
-    animation: slide4 12s linear infinite;
-}
-
-
-@keyframes slide1 {
-    0% {
-        visibility: visible;
-    }
-    25% {
-        visibility: hidden;
-    }
-    50% {
-        visibility: hidden;
-    }
-    75% {
-        visibility: hidden;
-    }
-    100% {
-        visibility: visible;
-    }
-}
-
-
-@keyframes slide2 {
-    0% {
-        visibility: hidden;
-    }
-    25% {
-        visibility: hidden;
-    }
-    50% {
-        visibility: visible;
-    }
-    75% {
-        visibility: hidden;
-    }
-    100% {
-        visibility: hidden;
-    }
-}
-
-@keyframes slide3 {
-    0% {
-        visibility: hidden;
-    }
-    25% {
-        visibility: hidden;
-    }
-    50% {
-        visibility: hidden;
-    }
-    75% {
-        visibility: visible;
-    }
-    100% {
-        visibility: visible;
-    }
-}
-
-@keyframes slide4 {
-    0% {
-        visibility: hidden;
-    }
-    25% {
-        visibility: hidden;
-    }
-    50% {
-        visibility: hidden;
-    }
-    75% {
-        visibility: hidden;
-    }
-    100% {
-        visibility: visible;
-    }
-}
 
 @media only screen and (min-width:870px) {
     .mobile-menu, .mobile-menu-exit {
