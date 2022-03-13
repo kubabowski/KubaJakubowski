@@ -375,10 +375,10 @@ iframe #mapa {
 }
 
 .carousel-container {
-    width: 600px;
+    max-width: 600px;
     height: 400px;
     position: relative;
-    margin: 0 auto;
+    margin: 8em auto;
     
   }
   
@@ -557,8 +557,25 @@ iframe #mapa {
 
 }
 
-#CV {
-    width: auto;
+.CV .container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 57%;
+    
+
+    #CV {
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+          
+    }
 }
 
 
